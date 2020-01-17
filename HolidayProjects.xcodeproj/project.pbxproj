@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		525086D523D16C1800BD2371 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 525086D423D16C1800BD2371 /* ImageKit */; };
 		5770EF7C23C8256C00625DE6 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770EF7B23C8256C00625DE6 /* ProjectsViewController.swift */; };
 		5770EF7E23C8932400625DE6 /* projects.json in Resources */ = {isa = PBXBuildFile; fileRef = 5770EF7D23C8932400625DE6 /* projects.json */; };
 		57E1738823C814BF00765FD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E1738723C814BF00765FD2 /* AppDelegate.swift */; };
@@ -39,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				525086D523D16C1800BD2371 /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +98,7 @@
 			);
 			name = HolidayProjects;
 			packageProductDependencies = (
+				525086D423D16C1800BD2371 /* ImageKit */,
 			);
 			productName = HolidayProjects;
 			productReference = 57E1738423C814BF00765FD2 /* HolidayProjects.app */;
@@ -126,6 +129,7 @@
 			);
 			mainGroup = 57E1737B23C814BF00765FD2;
 			packageReferences = (
+				525086D323D16C1800BD2371 /* XCRemoteSwiftPackageReference "ImageKit" */,
 			);
 			productRefGroup = 57E1738523C814BF00765FD2 /* Products */;
 			projectDirPath = "";
@@ -358,6 +362,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		525086D323D16C1800BD2371 /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/alexpaul/ImageKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		525086D423D16C1800BD2371 /* ImageKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 525086D323D16C1800BD2371 /* XCRemoteSwiftPackageReference "ImageKit" */;
+			productName = ImageKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 57E1737C23C814BF00765FD2 /* Project object */;
 }
