@@ -8,6 +8,7 @@
 
 import UIKit
 import ImageKit
+import SafariServices
 
 class ProjectDetailController: UIViewController {
     
@@ -54,6 +55,17 @@ class ProjectDetailController: UIViewController {
     }
     
     // TODO: add an action to open up a given Github page via SFSafariViewController
+    @IBAction func gitHubButton(_ sender: Any) {
+        guard let project = project else {
+            fatalError()
+        }
+        guard let url = URL(string: project.githubURL), !project.githubURL.isEmpty else {
+            print("No project url")
+            return
+        }
+        let safariVC = SFSafariViewController(url: url)
+        present(safariVC, animated: true)
+    }
     
 }
 
